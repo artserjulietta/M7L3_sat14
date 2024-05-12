@@ -1,6 +1,7 @@
 import string
 from password.new_password import generate_password
 
+
 def test_password_characters():
     """Тест, что при генерации используются только допустимые символы"""
     valid_characters = string.ascii_letters + string.digits + string.punctuation
@@ -9,7 +10,7 @@ def test_password_characters():
         assert char in valid_characters
 
 """
-Допиши еще один тест из предложенных. Или придумай свой.
+Допиши еще один тест из предложенных. Или придумай свой.   8
 Если сможешь написать больше, то будет круто!
 
 Тест, что длина пароля соответствует заданной

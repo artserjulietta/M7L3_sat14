@@ -26,4 +26,13 @@ def test_two_password():
     password2 = generate_password(10)
     assert password1 != password2
 
-# homework commit
+#     length = 12
+#     password = generate_password(length)
+#     assert len(password) == length
+
+
+def test_password_uniqueness():
+    """Тест, что два сгенерированных подряд пароля различаются"""
+    password1 = generate_password()
+    password2 = generate_password()
+    assert password1 != password2
